@@ -1,7 +1,7 @@
 # bar_hop_alpha
 
 A new Flutter project.
-
+##new changes made by developer 1 as a test 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
