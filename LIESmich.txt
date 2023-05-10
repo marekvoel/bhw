@@ -4,11 +4,7 @@ Welcome to the Bar App project! This repository contains the source code for a m
 
 ## Features
 
-- User Registration and Authenticatio
-2. Install the required dependencies:
-
-
-n
+- User Registration and Authentication
 - Bar Profile Display
 - Bar Profile Creation and Management
 - User Reviews
@@ -31,18 +27,12 @@ n
 
 To get started with the project, follow these steps:
 
-1. Clone the repository:
-
-
-
-2. Install the required dependencies:
-
-
-3. Set up Firebase project:
+1. Clone the repository
+2. Install the required dependencies
+3. Set up Firebase project
 - Create a Firebase project (https://firebase.google.com/)
 - Set up authentication and database services
 - Replace the Firebase configuration in the project with your own credentials
-
-4. Build and run the app:
+4. Build and run the app
 
 
