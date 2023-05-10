@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "bar_hop_alpha",
+			"path": "."
+		},
+		{
+			"name": "bhw-flutterdev",
+			"path": "../../../BarHopRepo/bhw-flutterdev"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,33 @@
+name: barhop
+description: A sample Flutter project
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_auth: ^4.5.0
+  
+
+  #google_maps_flutter: ^2.2.6
+  #google_sign_in: ^6.1.0
+  #geolocator: ^9.0.2
+  flutter_polyline_points: ^1.0.0
+  http: ^0.13.6
+  flutter_secure_storage: ^8.0.0
+  flutter_bloc: ^8.1.2
+  provider: ^6.0.5
+  flutter_spinkit: ^5.2.0
+  flutter_rating_bar: ^4.0.1
+  flutter_slidable: ^3.0.0
+  sqflite: ^2.2.8+2
+  shared_preferences: ^2.1.1
+  firebase_core: ^2.11.0
+  cupertino_icons: ^1.0.5
+  flutter_localization: ^0.1.10
+
+  
+  # Add your other dependencies here
+
+#
