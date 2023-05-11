@@ -1,21 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-class BarProfile {
-  final String name;
-  final String description;
-  final double rating;
-
-  BarProfile(
-      {required this.name, required this.description, required this.rating});
-}
+import 'bar_detail_screen.dart';
+import 'bar_profile.dart' as profile;
 
 class BarProfilesScreen extends StatelessWidget {
-  // Create a list of bar profiles
-  final List<BarProfile> barProfiles = [
-    BarProfile(name: "Bar 1", description: "Description 1", rating: 4.5),
-    BarProfile(name: "Bar 2", description: "Description 2", rating: 4.2),
-    BarProfile(name: "Bar 3", description: "Description 3", rating: 4.7),
+  final List<profile.BarProfile> barProfiles = [
+    profile.BarProfile(
+        name: "Bar 1", description: "Description 1", rating: 4.5),
+    profile.BarProfile(
+        name: "Bar 2", description: "Description 2", rating: 4.2),
+    profile.BarProfile(
+        name: "Bar 3", description: "Description 3", rating: 4.7),
   ];
 
   @override
@@ -23,12 +18,18 @@ class BarProfilesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Bar Profiles'),
-        backgroundColor: Colors.orange, // Set the AppBar color to orange
+        backgroundColor: Colors.deepOrange,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
       body: ListView.builder(
         itemCount: barProfiles.length,
         itemBuilder: (context, index) {
-          final barProfile = barProfiles[index];
+          final profile.BarProfile barProfile = barProfiles[index];
           return ListTile(
             leading: Icon(
               CupertinoIcons.bell_fill,
@@ -68,8 +69,12 @@ class BarProfilesScreen extends StatelessWidget {
               ],
             ),
             onTap: () {
-              // Handle when a bar profile is selected
-              // e.g., navigate to a details screen
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => BarDetailScreen(barProfile: barProfile),
+                ),
+              );
             },
           );
         },
